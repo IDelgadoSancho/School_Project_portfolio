@@ -40,7 +40,12 @@
   clip-path: var(--slice-0);
 }
 
-.button-49:hover:after {
+nav .button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+#landing_div:hover:after {
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
 }
