@@ -6,6 +6,18 @@
     <title>HOME</title>
     <link rel="stylesheet" href="css/landing_style.css" />
     <link rel="stylesheet" href="css/button.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
   </head>
   <body>
     <header>
@@ -28,18 +40,26 @@
     </header>
 
     <section>
-      <div id="landing_div" class="button-49">
-        <div>
-          <h1>lorem</h1>
-          <h3>ipsum</h3>
-          <p>text</p>
+      <div id="landing_div">
+        <div id="border">
+          <div>
+            <div id="data_div" class="date" onload="showTime()"></div>
+            <div id="clock_div" class="clock" onload="showTime()"></div>
+          </div>
+          <div id="map_container" class="map" onload="showMap()"></div>
         </div>
       </div>
     </section>
 
-    <footer>
+    <footer id="footer">
       <div id="footer_div">
-        <p style="color: white;">&copy Copyright 2024. All rights reserved. Create by Ismael Delegado.</p>
+        &copy Copyright 2024 - Ismael Delgado Sancho
+        <a
+          href="https://github.com/IDelgadoSancho/portfolio_ismael_delgado"
+          target="_blank"
+        >
+          <img src="media/img/github.png" alt="GitHub" />
+        </a>
       </div>
     </footer>
 
