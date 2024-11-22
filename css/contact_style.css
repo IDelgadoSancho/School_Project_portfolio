@@ -9,6 +9,7 @@ html {
 
 footer {
   left: 0;
+  bottom: 0;
   display: flex;
   width: 100%;
   height: fit-content;
@@ -29,10 +30,15 @@ footer::before {
 }
 
 .social_container {
+  border: 2px dotted white;
+
+  display: flex;
   width: 100%;
 }
 
 .social_list {
+  border: 2px dotted white;
+
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -98,6 +104,13 @@ footer::before {
   a {
     color: #00e6f6;
   }
+}
+
+.clock_container {
+  border: 2px dotted white;
+  
+  width: 1em;
+  height: 1em;
 }
 
 @media screen and (max-width: 576px) {
