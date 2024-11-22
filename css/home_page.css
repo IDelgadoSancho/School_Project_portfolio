@@ -12,6 +12,7 @@ html {
   font-family: clock;
   src: url(../media/fonts/digital_clock.ttf);
 }
+
 @font-face {
   font-family: roboto;
   src: url(../media/fonts/Roboto-Bold.ttf);

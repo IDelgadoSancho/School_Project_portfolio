@@ -1,6 +1,9 @@
 window.onload = function () {
-  document.getElementById("clock_container").onload = showTime();
-
-  setInterval(showTime, 1000);
-  showTime();
+  if (window.innerWidth <= 570) {
+    //mobile
+  } else {
+    // desktop
+    setInterval(() => showDate("date"), 1000);
+    setInterval(() => showTime("clock"), 1000);
+  }
 };
