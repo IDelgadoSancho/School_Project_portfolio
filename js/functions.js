@@ -62,8 +62,13 @@ function box_mobile() {
 }
 
 function grow(id) {
-  let box = document.getElementById(id);
-  box.classList.toggle("scaled");
+  let expanded = document.querySelectorAll('.expanded');
+  expanded.forEach(div => {
+    div.classList.remove('expanded');
+  });
+
+  let selected = document.getElementById(id);
+  selected.classList.add('expanded');
 }
 
 // function about page
