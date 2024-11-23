@@ -69,6 +69,20 @@ function grow(id) {
 
   let selected = document.getElementById(id);
   selected.classList.add('expanded');
+
+  let project = document.getElementById('project');
+  let backgroundImages = {
+    'pro_1': 'url("../media/img/connect4.png")',
+    'pro_2': 'url("../media/img/jsProyects.png")',
+    'pro_3': 'url("../media/img/characters.png")',
+    'pro_4': 'url("../media/img/snake.png")',
+    'pro_5': 'url("../media/img/calc.png")'
+  };
+
+  project.style.backgroundImage = backgroundImages[id];
+  project.innerHTML = "";
+  project.style.border = "1.2px solid red";
+
 }
 
 // function about page

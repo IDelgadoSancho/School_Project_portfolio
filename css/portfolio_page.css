@@ -1,6 +1,6 @@
 @font-face {
   font-family: clock;
-  src: url(../media/fonts/digital_clock.ttf);
+  src: url(../media/fonts/Prototype.ttf);
 }
 
 html {
@@ -16,7 +16,7 @@ body {
   margin-left: 0;
 }
 
-section{
+section {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -43,10 +43,17 @@ section{
 #pro_4,
 #pro_5 {
   margin-top: 0.5em;
-  border: 1px dotted wheat;
   background-color: black;
   width: 2.5em;
   height: 2.5em;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 3px;
+  img {
+    width: auto;
+    height: 90%;
+  }
 }
 
 #pro_1:hover,
@@ -121,19 +128,39 @@ section{
 .project_container {
   margin-top: 5em;
   margin-left: 15%;
-  border: 1px solid red;
   width: 20em;
   height: 20em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(135deg, #00e6f6 98%, transparent 5%);
 }
 
-#project{
+#project {
   background: linear-gradient(135deg, #00e6f6 98%, transparent 5%);
-width: 85%;
-height: 85%;
+  background-size: contain;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.container div .text {
+  display: none;
+}
+
+.container div.expanded .text {
+  display: block;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin-left: 2em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
@@ -174,7 +201,7 @@ footer::before {
     margin-left: 1em;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     padding: 10px;
     background: linear-gradient(
@@ -210,12 +237,10 @@ footer::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1.9em;
-  margin-top: 0.1em;
-  margin-left: 0.5em;
   padding: 10px;
   font-size: 24px;
   font-weight: bold;
+  margin-right: 5%;
   background: linear-gradient(45deg, #00a8b4 95%, transparent 5%);
   a {
     letter-spacing: 3px;

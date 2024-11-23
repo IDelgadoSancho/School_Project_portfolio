@@ -6,6 +6,6 @@ window.onload = function () {
   } else {
     // desktop
     box();
-
+    document.getElementById("project").innerHTML = "SELECT PROJECT"
   }
 };
