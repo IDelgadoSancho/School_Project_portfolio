@@ -62,27 +62,26 @@ function box_mobile() {
 }
 
 function grow(id) {
-  let expanded = document.querySelectorAll('.expanded');
-  expanded.forEach(div => {
-    div.classList.remove('expanded');
+  let expanded = document.querySelectorAll(".expanded");
+  expanded.forEach((div) => {
+    div.classList.remove("expanded");
   });
 
   let selected = document.getElementById(id);
-  selected.classList.add('expanded');
+  selected.classList.add("expanded");
 
-  let project = document.getElementById('project');
+  let project = document.getElementById("project");
   let backgroundImages = {
-    'pro_1': 'url("../media/img/connect4.png")',
-    'pro_2': 'url("../media/img/jsProyects.png")',
-    'pro_3': 'url("../media/img/characters.png")',
-    'pro_4': 'url("../media/img/snake.png")',
-    'pro_5': 'url("../media/img/calc.png")'
+    pro_1: 'url("../media/img/connect4.png")',
+    pro_2: 'url("../media/img/jsProyects.png")',
+    pro_3: 'url("../media/img/characters.png")',
+    pro_4: 'url("../media/img/snake.png")',
+    pro_5: 'url("../media/img/calc.png")',
   };
 
   project.style.backgroundImage = backgroundImages[id];
   project.innerHTML = "";
   project.style.border = "1.2px solid red";
-
 }
 
 // function about page
@@ -91,15 +90,22 @@ async function boxes() {
   let box2 = document.querySelector(".box_2");
 
   box1.classList.add("grow-height");
+  document.getElementById("box_1_title").innerHTML = "ABOUT ME";
+
   await delay(800);
   box2.classList.add("grow-height2");
+  document.getElementById("box_2_title").innerHTML = "SKILLS";
 }
 
-async function boxes_mobile() {
-  let box1 = document.querySelector(".box_1");
-  let box2 = document.querySelector(".box_2");
-
-  box1.style.transform = "scale(1)";
-  await delay(800);
-  box2.style.transform = "scale(1)";
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
+// async function boxes_mobile() {
+//   let box1 = document.querySelector(".box_1");
+//   let box2 = document.querySelector(".box_2");
+
+//   box1.style.transform = "scale(1)";
+//   await delay(800);
+//   box2.style.transform = "scale(1)";
+// }

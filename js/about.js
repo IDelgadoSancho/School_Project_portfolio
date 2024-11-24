@@ -3,5 +3,8 @@ window.onload = async function () {
     //mobile
   } else {
     // desktop
+    setInterval(() => showDate("date"), 1000);
+    setInterval(() => showTime("clock"), 1000);
+    boxes();
   }
 };
