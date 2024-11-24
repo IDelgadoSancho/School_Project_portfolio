@@ -10,26 +10,19 @@ window.onload = async function () {
   }
 
   landing.style.transform = "scale(1)";
+  setInterval(() => showDate("date"), 1000);
+  setInterval(() => showTime("clock"), 1000);
+  let since = document.getElementById("since2024");
+  since.innerHTML = calcular2024();
 
   // conditional for mobile page
   if (window.innerWidth <= 570) {
     // mobile
     footer.style.transform = "translateX(0%)";
     document.getElementById("map_container").style.display = "none";
-    box_mobile();
-    boxes_mobile();
-
   } else {
     // desktop
     footer.style.transform = "translateX(10%)";
-    box();
-    boxes();
-
+    showMap();
   }
-  document.getElementById("data_div").onload = showTime();
-  document.getElementById("clock_div").onload = showTime();
-
-  setInterval(showTime, 1000);
-  showTime();
-  showMap();
 };

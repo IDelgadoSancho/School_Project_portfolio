@@ -42,7 +42,7 @@ function showMap() {
         // attribution: '<a href="https://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         minZoom: 0,
         maxZoom: 15,
-        accessToken: "<your accessToken>",
+        accessToken: "17spMArjYGr4QBAdJmPfBtITxJTR5t0s3AjqjPIC5kN04nbNpPIbIhlqt64dIn4a",
       }
     ).addTo(map);
     // L.control.scale().addTo(map);
@@ -99,6 +99,15 @@ async function boxes() {
 
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function calcular2024() {
+  let avui = new Date();
+  let dataInicial = new Date("2024-09-16");
+  let diferenciaTemps = avui.getTime() - dataInicial.getTime();
+  let milisegonsPerDia = 1000 * 3600 * 24;
+  let diesPassats = Math.floor(diferenciaTemps / milisegonsPerDia);
+  return `${diesPassats} DAYS`;
 }
 
 // async function boxes_mobile() {
