@@ -47,7 +47,7 @@ p {
   margin-top: 5%;
   width: 25%;
   max-width: 500px;
-  background: linear-gradient(135deg, red 98%, transparent 5%);
+  background: linear-gradient(135deg, #FF013C 98%, transparent 5%);
   position: relative;
   height: 0;
 }
@@ -57,7 +57,7 @@ p {
   margin-top: 5%;
   width: 25%;
   max-width: 500px;
-  background: linear-gradient(135deg, red 98%, transparent 5%);
+  background: linear-gradient(135deg, #FF013C 98%, transparent 5%);
   position: relative;
   height: 0;
   li{
@@ -70,7 +70,7 @@ p {
 .box_2::before {
   content: "";
   left: 0;
-  background: linear-gradient(135deg, transparent 10%, red 10%);
+  background: linear-gradient(135deg, transparent 10%, #FF013C 10%);
   position: absolute;
   width: 65%;
   height: 15px;
@@ -249,7 +249,7 @@ footer::before {
     padding: 10px;
     margin: 0 auto;
     margin-top: 40px;
-    background: linear-gradient(135deg, red 97%, transparent 5%);
+    background: linear-gradient(135deg, #FF013C 97%, transparent 5%);
     position: relative;
     transform: scale(0);
     transition: transform 0.4s ease-in;
