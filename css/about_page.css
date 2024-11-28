@@ -10,7 +10,9 @@ html {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
+  cursor: url("../media/img/svg/pointer.svg"), auto;
 }
+
 
 .fixed-logo {
   position: fixed;
@@ -43,24 +45,28 @@ p {
 }
 
 .box_1 {
+  font-size: calc(10px + 0.5vw);
+
   padding: 10px;
   margin-top: 5%;
   width: 25%;
   max-width: 500px;
-  background: linear-gradient(135deg, #FF013C 98%, transparent 5%);
+  background: linear-gradient(135deg, #ff013c 98%, transparent 5%);
   position: relative;
   height: 0;
 }
 
 .box_2 {
+  font-size: calc(10px + 0.5vw);
+
   padding: 10px;
   margin-top: 5%;
   width: 25%;
   max-width: 500px;
-  background: linear-gradient(135deg, #FF013C 98%, transparent 5%);
+  background: linear-gradient(135deg, #ff013c 98%, transparent 5%);
   position: relative;
   height: 0;
-  li{
+  li {
     list-style: square;
     letter-spacing: 3px;
   }
@@ -70,7 +76,7 @@ p {
 .box_2::before {
   content: "";
   left: 0;
-  background: linear-gradient(135deg, transparent 10%, #FF013C 10%);
+  background: linear-gradient(135deg, transparent 10%, #ff013c 10%);
   position: absolute;
   width: 65%;
   height: 15px;
@@ -209,18 +215,22 @@ footer::before {
 @keyframes growHeight {
   from {
     height: 0;
+    overflow: hidden;
   }
   to {
-    height: 400px;
+    height: 30em;
+    overflow: hidden;
   }
 }
 
 @keyframes growHeight2 {
   from {
     height: 0;
+    overflow: hidden;
   }
   to {
-    height: 400px;
+    height: 20em;
+    overflow: hidden;
   }
 }
 
@@ -249,7 +259,7 @@ footer::before {
     padding: 10px;
     margin: 0 auto;
     margin-top: 40px;
-    background: linear-gradient(135deg, #FF013C 97%, transparent 5%);
+    background: linear-gradient(135deg, red 97%, transparent 5%);
     position: relative;
     transform: scale(0);
     transition: transform 0.4s ease-in;
